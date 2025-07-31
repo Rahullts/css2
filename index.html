@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soft Skills Workshop Enrollment</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #83a4d4, #b6fbff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #ffffffcc;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 450px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .enroll-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .enroll-form label {
+      margin: 10px 0 5px;
+      font-weight: 600;
+    }
+
+    .enroll-form input,
+    .enroll-form select,
+    .enroll-form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .enroll-form button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .enroll-form button:hover {
+      background-color: #1c5980;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Soft Skills Workshop Enrollment</h1>
+    <form class="enroll-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="topic">Interested Topic</label>
+      <select id="topic" name="topic" required>
+        <option value="">-- Select --</option>
+        <option value="communication">Communication Skills</option>
+        <option value="teamwork">Teamwork</option>
+        <option value="leadership">Leadership</option>
+        <option value="time">Time Management</option>
+      </select>
+
+      <label for="message">Why are you interested?</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">Enroll Now</button>
+    </form>
+  </div>
+</body>
+</html>
+
